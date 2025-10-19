@@ -71,3 +71,8 @@ README.md
 ## 🧾 License
 
 MIT — free to use and modify with attribution.
+
+
+### Contact
+
+For questions or support: **alessandro@giussani.net**

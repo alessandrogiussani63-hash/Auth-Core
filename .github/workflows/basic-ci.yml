@@ -1,0 +1,18 @@
+name: Basic CI
+on: [push, pull_request]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: PHP lint
+        run: |
+          if command -v php; then
+            find . -type f -name "*.php" -print0 | xargs -0 -I{} php -l "{}"
+          else
+            echo "php not installed on runner, skipping"
+          fi
+      - name: Shellcheck
+        uses: ludeeus/action-shellcheck@v2
+        with:
+          scandir: .
