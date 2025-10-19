@@ -1,0 +1,9 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "role": "admin",
+      "password_hash": "$2y$10$change_me"
+    }
+  ]
+}
